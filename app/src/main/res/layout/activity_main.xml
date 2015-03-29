@@ -12,6 +12,35 @@
 		fresco:placeholderImage="@drawable/smallimage"
 		/>
 
+	<com.facebook.drawee.view.SimpleDraweeView
+		android:id="@+id/my_xmlmod_view"
+		android:layout_width="150dp"
+		android:layout_height="150dp"
+		fresco:fadeDuration="1300"
+		fresco:actualImageScaleType="focusCrop"
+		fresco:placeholderImage="@color/hint_foreground_material_light"
+		fresco:placeholderImageScaleType="fitCenter"
+		fresco:failureImage="@drawable/abc_ic_clear_mtrl_alpha"
+		fresco:failureImageScaleType="centerInside"
+		fresco:retryImage="@drawable/abc_ratingbar_full_material"
+		fresco:retryImageScaleType="centerCrop"
+		fresco:progressBarImage="@drawable/abc_ic_commit_search_api_mtrl_alpha"
+		fresco:progressBarImageScaleType="centerInside"
+		fresco:progressBarAutoRotateInterval="1000"
+		fresco:backgroundImage="@color/highlighted_text_material_light"
+		fresco:overlayImage="@drawable/abc_ic_menu_cut_mtrl_alpha"
+		fresco:pressedStateOverlayImage="@color/dim_foreground_disabled_material_dark"
+		fresco:roundAsCircle="false"
+		fresco:roundedCornerRadius="1dp"
+		fresco:roundTopLeft="true"
+		fresco:roundTopRight="false"
+		fresco:roundBottomLeft="false"
+		fresco:roundBottomRight="true"
+		fresco:roundWithOverlayColor="@color/accent_material_dark"
+		fresco:roundingBorderWidth="2dp"
+		fresco:roundingBorderColor="@color/material_blue_grey_900"
+		/>
+
 
 
 </LinearLayout>

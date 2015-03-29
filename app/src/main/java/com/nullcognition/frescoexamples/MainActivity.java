@@ -17,6 +17,7 @@ public class MainActivity extends ActionBarActivity {
 	  super.onCreate(savedInstanceState);
 
 	  Fresco.initialize(this); // initialization to be done before the content view is set
+
 	  setContentView(R.layout.activity_main); // after Fresco is initialized
 
    }
@@ -37,6 +38,11 @@ public class MainActivity extends ActionBarActivity {
 
 		 draweeView.setImageURI(Uri.parse("http://maps.google.com/mapfiles/kml/pal3/icon55.png"));
 		 // does a fade in when the image is acquired, cool
+		 return true;
+	  }
+	  else if(id == R.id.action_withxmlmods){
+		 SimpleDraweeView sdv = (SimpleDraweeView)findViewById(R.id.my_xmlmod_view); // xml modifications
+		 sdv.setImageURI(Uri.parse("http://maps.google.com/mapfiles/kml/pal3/icon55.png"));
 		 return true;
 	  }
 	  return super.onOptionsItemSelected(item);
