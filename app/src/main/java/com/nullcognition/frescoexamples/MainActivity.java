@@ -1,6 +1,7 @@
 package com.nullcognition.frescoexamples;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.graphics.PorterDuff;
@@ -51,6 +52,7 @@ public class MainActivity extends ActionBarActivity {
 	  List<Drawable> backgrounds;
 	  List<Drawable> overlays;
 
+
 	  GenericDraweeHierarchyBuilder builder = new GenericDraweeHierarchyBuilder(getResources());
 	  GenericDraweeHierarchy hierarchy = builder.setFadeDuration(1000)
 												.setPlaceholderImage(getResources().getDrawable(R.drawable.smallimage), ScalingUtils.ScaleType.CENTER_CROP)
@@ -63,6 +65,7 @@ public class MainActivity extends ActionBarActivity {
 	  hierarchy.setActualImageColorFilter(pd);
 	  RoundingParams roundingParams = hierarchy.getRoundingParams();
 	  roundingParams.setCornersRadius(10);
+//	  roundingParams.setRoundAsCircle(true)
 	  hierarchy.setRoundingParams(roundingParams);
 
 	  draweeView.setHierarchy(hierarchy); // do not call this method more than once on the same view, use setController/setImageURI to change the image
@@ -94,6 +97,11 @@ public class MainActivity extends ActionBarActivity {
 		 sdv.setAspectRatio(3.00f); // test this further, currently not doing anything visible, unless undetected...
 		 sdv.setImageURI(Uri.parse("http://maps.google.com/mapfiles/kml/pal3/icon55.png"));
 		 return true;
+	  }
+	  else if(id == R.id.action_newactivity){
+		 Intent newActivity = new Intent(this, NewActivity.class);
+		 newActivity.putExtra("newActivity", "value");
+		 startActivity(newActivity);
 	  }
 
 	  return super.onOptionsItemSelected(item);

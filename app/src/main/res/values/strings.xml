@@ -5,4 +5,6 @@
 	<string name="action_settings">Settings</string>
 	<string name="action_simpledrawee">simple drawee</string>
 	<string name="action_withxmlmods">With xml mods</string>
+	<string name="title_activity_new">NewActivity</string>
+	<string name="action_newactivity">New Activity</string>
 </resources>

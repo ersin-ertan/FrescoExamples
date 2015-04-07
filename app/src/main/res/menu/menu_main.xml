@@ -14,10 +14,11 @@
 	      android:orderInCategory="100"
 	      app:showAsAction="never"/>
 
-	<!--<item android:id="@+id/action_settings"-->
-	      <!--android:title="@string/action_settings"-->
-	      <!--android:orderInCategory="100"-->
-	      <!--app:showAsAction="never"/>-->
+	<item android:id="@+id/action_newactivity"
+	      android:title="@string/action_newactivity"
+	      android:orderInCategory="100"
+	      app:showAsAction="never"/>
+
 	<!--<item android:id="@+id/action_settings"-->
 	      <!--android:title="@string/action_settings"-->
 	      <!--android:orderInCategory="100"-->
